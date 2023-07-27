@@ -5,12 +5,12 @@
 Clone the template from GitHub:
 
 ```bash
-git clone "" cricket-website
+git clone "https://github.com/gskorupa/cricket-website-template.git" my-website
 ```
 
 Install the dependencies:
 ```bash
-cd cricket-website
+cd my-website
 npm install
 npm install --save-dev @sveltejs/adapter-node
 ```
@@ -40,12 +40,12 @@ You can preview the production build with `npm run preview`.
 
 Building Docker Image
 ```bash
-docker build --rm -f "Dockerfile" -t sveltekitdocker:latest "."
+docker build --rm -f "Dockerfile" -t mywebsite:latest "."
 ```
 
 Running Docker Image
 ```bash
-docker run --rm -d -p 5000:5000/tcp sveltekitdocker:latest
-docker run -p 8080:3000 sveltekitdocker:latest
+docker run --rm -d -p 5000:5000/tcp mywebsite:latest
+docker run -p 8080:3000 mywebsite:latest
 
 ```
